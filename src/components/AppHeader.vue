@@ -51,7 +51,7 @@ export default {
 @use '../styles/partials/variables' as *;
   
   section.container {
-    height: 100px;
+    height: 70px;
     color: $titles-color;
     font-size: $text-fs;
     div.logo-container {
