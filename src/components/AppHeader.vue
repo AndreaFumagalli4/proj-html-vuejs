@@ -16,8 +16,8 @@ export default {
     <div class="logo-container">
       <img src="../assets/images/dark-logo.png" alt="Main Logo">
     </div>
-    <div class="flex">
-      <ul class="flex">
+    <div class="flex lists">
+      <ul class="flex links">
         <li v-for="link in linksList">
           <a href="#">
             {{ link }}
@@ -25,7 +25,7 @@ export default {
           </a>
         </li>
       </ul>
-      <ul class="flex">
+      <ul class="flex icons-list">
         <li>
           <a href="#">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -38,7 +38,7 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="flex">
+    <div class="flex input-el">
       <input type="text" placeholder="Search...">
       <button>
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -61,5 +61,45 @@ export default {
         width: 100%;
       }
     }
+  }
+
+  div.lists {
+    margin-left: auto;
+    ul.links li {
+      padding: 0 1rem;
+  
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  div.lists ul.icons-list {
+    margin-left: .3rem;
+  }
+
+  ul.icons-list li{
+    padding-right: .75rem;
+  }
+
+  div.input-el {
+    position: relative;
+
+    input{
+    width: 150px;
+    padding: .75rem;
+    border: none;
+    border-radius: 3px;
+    }
+  }
+
+  div.input-el button {
+    color: $detail-color;
+    background-color: $sec-bg-color;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
   }
 </style>
