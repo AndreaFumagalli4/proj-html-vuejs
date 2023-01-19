@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: 'CoursesCard',
+    name: 'LatestCoursesCard',
 
     props: {
         courseImage: String,

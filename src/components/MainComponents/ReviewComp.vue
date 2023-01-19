@@ -1,11 +1,12 @@
 <script>
 import { store } from '../../store';
+import ReviewCard from './ReviewCard.vue';
 
 export default {
     name: 'ReviewComp',
 
     components: {
-
+        ReviewCard
     },
 
     data() {
@@ -26,7 +27,11 @@ export default {
                 What make they <span>love us?</span>
             </h2>
             <div class="cards">
-
+                <ReviewCard v-for="review in store.reviewList"
+                    :image="review.image"
+                    :feedback="review.feedback"
+                    :name="review.name"
+                    :work="review.employment"/>
             </div>
         </div>
     </section>

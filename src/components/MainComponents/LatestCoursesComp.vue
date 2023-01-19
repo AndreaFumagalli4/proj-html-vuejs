@@ -1,12 +1,12 @@
 <script>
 import { store } from '../../store';
-import CoursesCard from './CoursesCard.vue';
+import LatestCoursesCard from './LatestCoursesCard.vue';
 
 export default {
     name: 'LatestCouresComp',
 
     components: {
-        CoursesCard,
+        LatestCoursesCard,
     },
 
     data() {
@@ -28,7 +28,7 @@ export default {
             </h2>
         </div>
         <div class="cards-container container flex">
-            <CoursesCard v-for="courseInfoEl in store.courseInfoList" 
+            <LatestCoursesCard v-for="courseInfoEl in store.courseInfoList" 
                 :courseImage="courseInfoEl.image" 
                 :teachImage="courseInfoEl.teacherProfileImage"
                 :teachName="courseInfoEl.teacher"
