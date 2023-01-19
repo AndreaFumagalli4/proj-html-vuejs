@@ -37,11 +37,20 @@ export default {
                 :numberOfStudents="courseInfoEl.studentsNumber"
                 :price="courseInfoEl.price "/>
         </div>
+        <div class="button">
+            <button class="green-button">
+                View all courses 
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
     @use '../../styles/partials/variables' as *;
+    section.latest-courses {
+        background-color: $courses-bg-color;
+    }
 
     h2 {
         margin-bottom: 3rem;
@@ -49,4 +58,9 @@ export default {
     div.cards-container {
         flex-wrap: wrap;
     }
+
+    div.button {
+        text-align: center;
+    }
+
 </style>
