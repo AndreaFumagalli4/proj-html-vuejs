@@ -45,6 +45,7 @@ export default {
 
     section.mobile-learn {
         position: relative;
+        margin-bottom: 5rem;
 
         div.container {
             height: 450px;
