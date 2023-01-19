@@ -34,6 +34,9 @@ export default {
                     :date="event.dayNumber"
                     :month="event.month"/>
             </div>
+            <p>
+                Excited about our event? <a href="#">View all events<i class="fa-solid fa-arrow-right-long"></i></a>
+            </p>
         </div>
     </section>
 </template>
@@ -42,7 +45,7 @@ export default {
     @use '../../styles/partials/variables' as *;
 
     section.events{
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
 
         h2{
             padding-bottom: 2rem;
@@ -50,6 +53,17 @@ export default {
 
         div.events-cards {
             flex-wrap: wrap;
+        }
+
+        p{
+            text-align: center;
+            color: $subtitles-color;
+
+            a{
+                color: $detail-color;
+                font-weight: 600;
+                text-decoration: underline;
+            }
         }
     }
 </style>
