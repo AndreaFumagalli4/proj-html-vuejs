@@ -7,6 +7,7 @@ import LatestCoursesComp from './LatestCoursesComp.vue';
 import GetStartedComp from './GetStartedComp.vue';
 import MobileLearnComp from './MobileLearnComp.vue';
 import EventComp from './EventComp.vue';
+import ReviewComp from './ReviewComp.vue';
 
 export default {
     name: 'AppMAin',
@@ -20,7 +21,7 @@ export default {
         GetStartedComp,
         MobileLearnComp,
         EventComp,
-
+        ReviewComp
     }
 }
 </script>
@@ -34,6 +35,7 @@ export default {
     <GetStartedComp />
     <MobileLearnComp />
     <EventComp />
+    <ReviewComp />
 </template>
 
 <style lang="scss" scoped>

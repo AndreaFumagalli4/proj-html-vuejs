@@ -101,6 +101,32 @@ export const store = reactive({
             month: 'aug'
         },
         
+    ],
+    reviewList: [
+        {
+            image: 'testimonial-avata-02.jpg',
+            feedback: 'I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
+            name: 'Mina Hollace',
+            employment: 'Freelancer'
+        },
+        {
+            image: 'testimonial-avata-04.jpg',
+            feedback: 'MaxCoach is my best choise. Their tutors are smart and professional when deadling with students.',
+            name: 'Madley Pondor',
+            employment: 'IT Specialist'
+        },
+        {
+            image: 'testimonial-avata-01.jpg',
+            feedback: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.',
+            name: 'Luvic Dubble',
+            employment: 'Private Tutor'
+        },
+        {
+            image: 'testimonial-avata-03.jpg',
+            feedback: 'MaxCoach is my best choise. Their tutors are smart and professional when deadling with students.',
+            name: 'Madley Pondor',
+            employment: 'Economist'
+        },
     ]
     
 })
