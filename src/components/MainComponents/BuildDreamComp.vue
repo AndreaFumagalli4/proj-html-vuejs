@@ -1,7 +1,12 @@
 <script>
+import BuildDreamCard from './BuildDreamCard.vue';
 
 export default {
     name: 'BuildDreamComp',
+
+    components: {
+        BuildDreamCard
+    },
 
     data() {
         return {
@@ -33,7 +38,7 @@ export default {
     methods: {
         getImagePath: function(imgPath) {
             return new URL(`../../assets/images/${imgPath}`, import.meta.url).href;
-    }
+        }
     }
 }
 </script>
@@ -47,15 +52,17 @@ export default {
             <h2>
                 Build Your Dream <span>Today</span>
             </h2>
-            <div class="cards">
-                
+            <div class="cards flex">
+                <BuildDreamCard v-for="courseEl in coursesList"
+                    :imgPath="courseEl.image_path"
+                    :cardTitle="courseEl.title"
+                    :cardText="courseEl.text"/>
             </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
-    @use '../../styles/partials/variables' as *;
     
     h2 {
         padding-bottom: 3rem;

@@ -54,7 +54,6 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        margin-bottom: 3rem;
 
         div.container {
             height: 450px;

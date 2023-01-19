@@ -43,6 +43,10 @@ export default {
     border-radius: 10px;
   }
 
+  section {
+    margin-bottom: 3rem;
+  }
+
   header {
     background-color: $third-bg-color;
   }
