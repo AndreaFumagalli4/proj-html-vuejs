@@ -20,9 +20,16 @@ export default {
                     Download free E-book
                 </button>
             </div>
-            <div>
+            <div class="image-container">
                 <img src="../../assets/images/home-5-hero-image-279x300.png" alt="Jumbo image">
             </div>
+        </div>
+        <div class="icons-list">
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
         </div>
     </section>
 </template>
@@ -39,6 +46,7 @@ export default {
 
         div.container {
             height: 100%;
+            justify-content: space-between;
 
             div.title-section {
                 width: 50%;
@@ -53,6 +61,15 @@ export default {
                 p {
                     padding-top: 1.5rem;
                     margin-bottom: 1.5rem;
+                }
+            }
+
+            div.image-container {
+                height: 100%;
+                padding: 2rem 0;
+
+                img {
+                    height: 100%;
                 }
             }
         }
