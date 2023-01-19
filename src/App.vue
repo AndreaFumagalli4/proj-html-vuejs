@@ -51,4 +51,25 @@ export default {
     font-size: $text-fs;
   }
 
+  h3 {
+    text-align: center;
+    color: $subtitles-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+    padding: 1rem 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: $titles-color;
+    font-size: $titles-fs;
+
+    span {
+            color: $detail-color;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+  }
+
 </style>
