@@ -53,6 +53,7 @@ export default {
 
   p {
     font-size: $text-fs;
+    line-height: 1.4rem;
   }
 
   h3 {
@@ -70,10 +71,9 @@ export default {
     font-size: $titles-fs;
 
     span {
-            color: $detail-color;
-            text-transform: uppercase;
-            font-weight: 400;
-        }
+      color: $detail-color;
+      font-weight: 400;
+    }
   }
 
 </style>

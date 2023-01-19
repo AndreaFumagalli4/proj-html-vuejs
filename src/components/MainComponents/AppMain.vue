@@ -1,6 +1,7 @@
 <script>
 import JumboComp from './JumboComp.vue';
 import BuildDreamComp from './BuildDreamComp.vue';
+import CareerProspComp from './CareerProspComp.vue';
 
 export default {
     name: 'AppMAin',
@@ -8,6 +9,7 @@ export default {
     components: {
         JumboComp,
         BuildDreamComp,
+        CareerProspComp,
 
     }
 }
@@ -16,6 +18,7 @@ export default {
 <template>
     <JumboComp />
     <BuildDreamComp />
+    <CareerProspComp />
 </template>
 
 <style lang="scss" scoped>

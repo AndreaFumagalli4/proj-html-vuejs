@@ -66,5 +66,9 @@ export default {
     
     h2 {
         padding-bottom: 3rem;
+
+        span {
+            text-transform: uppercase;
+        }
     }
 </style>
