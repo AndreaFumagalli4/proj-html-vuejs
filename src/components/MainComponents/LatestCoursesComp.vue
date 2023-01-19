@@ -50,6 +50,7 @@ export default {
     @use '../../styles/partials/variables' as *;
     section.latest-courses {
         background-color: $courses-bg-color;
+        margin-bottom: 5rem;
     }
 
     h2 {

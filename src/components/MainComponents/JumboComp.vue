@@ -72,6 +72,8 @@ export default {
                 p {
                     padding-top: 2rem;
                     margin-bottom: 2rem;
+                    font-size: 1rem;
+                    line-height: 1.7rem;
                 }
             }
 

@@ -50,7 +50,7 @@ export default {
             </div>
         </div>
         <div class="bg-image">
-            <img src="../../assets/images/underlay-shape-lilla.svg" alt="">
+            <img src="../../assets/images/underlay-shape-lilla.svg" alt="Background Lilla">
         </div>
     </section>
 </template>

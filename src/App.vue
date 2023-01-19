@@ -69,6 +69,7 @@ export default {
     text-align: center;
     color: $titles-color;
     font-size: $titles-fs;
+    font-weight: 600;
 
     span {
       color: $detail-color;
