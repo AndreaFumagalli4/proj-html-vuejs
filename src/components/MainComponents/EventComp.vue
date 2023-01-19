@@ -26,7 +26,7 @@ export default {
             <h2>
                 Upcoming <span>Events</span>
             </h2>
-            <div class="events-cards">
+            <div class="events-cards flex">
                 <EventCard v-for="event in store.eventsList"
                     :state="event.place"
                     :nation="event.nation"
@@ -41,4 +41,15 @@ export default {
 <style lang="scss" scoped>
     @use '../../styles/partials/variables' as *;
 
+    section.events{
+        margin-bottom: 2rem;
+
+        h2{
+            padding-bottom: 2rem;
+        }
+
+        div.events-cards {
+            flex-wrap: wrap;
+        }
+    }
 </style>
