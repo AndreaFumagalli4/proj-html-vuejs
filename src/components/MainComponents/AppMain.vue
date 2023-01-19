@@ -2,6 +2,8 @@
 import JumboComp from './JumboComp.vue';
 import BuildDreamComp from './BuildDreamComp.vue';
 import CareerProspComp from './CareerProspComp.vue';
+import DataComp from './DataComp.vue';
+
 
 export default {
     name: 'AppMAin',
@@ -10,6 +12,7 @@ export default {
         JumboComp,
         BuildDreamComp,
         CareerProspComp,
+        DataComp,
 
     }
 }
@@ -19,6 +22,7 @@ export default {
     <JumboComp />
     <BuildDreamComp />
     <CareerProspComp />
+    <DataComp />
 </template>
 
 <style lang="scss" scoped>
