@@ -39,7 +39,7 @@ export default {
                 <img src="../../assets/images/home-5-image-01-269x300.png" alt="Get Free image">
             </div>
         </div>
-        <div class="bg-image user-red-shirt">
+        <div class="bg-image grey-bg-img">
             <img src="../../assets/images/underlay-shape-grey.svg" alt="Background grey">
         </div>
         <div class="bg-image bg-image-dots">
@@ -53,7 +53,7 @@ export default {
 
     section.get-started {
         position: relative;
-
+        margin-bottom: 10rem;
         div.container {
             height: 450px;
             justify-content: space-between;
@@ -100,7 +100,7 @@ export default {
         .bg-image{
             position: absolute;
         }
-        div.user-red-shirt {
+        div.grey-bg-img {
             height: 400px;
             width: 400px;
             top: 25%;
