@@ -27,7 +27,16 @@ export default {
         <div class="icons-list">
             <ul>
                 <li>
-                    
+                    <i class="fa-solid fa-cart-shopping fa-xs"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-dharmachakra fa-xs"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-book fa-xs"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping fa-xs"></i>
                 </li>
             </ul>
         </div>
@@ -38,19 +47,21 @@ export default {
     @use '../../styles/partials/variables' as *;
 
     section.jumbo {
-        height: 500px;
+        // height: 500px;
+        background-color: $third-bg-color;
         background-image: url('../../assets/images/jumbo-overlay.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
 
         div.container {
-            height: 100%;
+            height: 450px;
             justify-content: space-between;
 
             div.title-section {
-                width: 50%;
-                padding: 1rem 3rem 1rem 0;
+                width: 40%;
+                padding: 1rem 1rem 1rem 0;
 
                 h1 {
                     color: $titles-color;
@@ -59,8 +70,8 @@ export default {
                 }
 
                 p {
-                    padding-top: 1.5rem;
-                    margin-bottom: 1.5rem;
+                    padding-top: 2rem;
+                    margin-bottom: 2rem;
                 }
             }
 
@@ -71,6 +82,17 @@ export default {
                 img {
                     height: 100%;
                 }
+            }
+        }
+
+        div.icons-list {
+            background-color: $sec-bg-color;
+            position: absolute;
+            right: 0;
+            top: 25%;
+
+            ul li {
+                padding: .25rem;
             }
         }
     }
