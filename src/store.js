@@ -57,5 +57,50 @@ export const store = reactive({
             price: '$59.00'
         },
     ],
+    eventsList: [
+        {
+            place: 'Texas',
+            nation: 'US',
+            typeOfEvent: 'Storytelling Workshop',
+            dayNumber: '22',
+            month: 'nov'
+        },
+        {
+            place: 'New York',
+            nation: 'US',
+            typeOfEvent: 'Painting Art Contest 2020',
+            dayNumber: '10',
+            month: 'oct'
+        },
+        {
+            place: 'Hamburg',
+            nation: 'Germany',
+            typeOfEvent: 'International Art Fair 2020',
+            dayNumber: '23',
+            month: 'nov'
+        },
+        {
+            place: 'Illinois',
+            nation: 'US',
+            typeOfEvent: 'Street Performance: Call for Artist',
+            dayNumber: '15',
+            month: 'dec'
+        },
+        {
+            place: 'Illinois',
+            nation: 'US',
+            typeOfEvent: 'Consumer Food Safety Education Conference',
+            dayNumber: '22',
+            month: 'jul'
+        },
+        {
+            place: 'Dubai',
+            nation: 'AER',
+            typeOfEvent: 'How meditation improve your mental health?',
+            dayNumber: '12',
+            month: 'aug'
+        },
+        
+    ]
     
 })
