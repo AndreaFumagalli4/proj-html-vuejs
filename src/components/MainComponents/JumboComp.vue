@@ -27,16 +27,24 @@ export default {
         <div class="icons-list">
             <ul>
                 <li>
-                    <i class="fa-solid fa-cart-shopping fa-xs"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-xs"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-dharmachakra fa-xs"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-dharmachakra fa-xs"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-book fa-xs"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-book fa-xs"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-cart-shopping fa-xs"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-xs"></i>
+                    </a>
                 </li>
             </ul>
         </div>
