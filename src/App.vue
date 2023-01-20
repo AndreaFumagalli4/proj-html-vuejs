@@ -41,6 +41,11 @@ export default {
     padding: 1rem 2.5rem;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-button;
+    }
   }
 
   section {
