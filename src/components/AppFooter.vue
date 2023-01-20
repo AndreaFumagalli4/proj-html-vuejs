@@ -1,30 +1,12 @@
 <script>
+import { store } from '../store';
+
 export default {
     name: 'AppFooter',
 
     data() {
         return {
-            contactsList: [
-                '382 NE 191st # 87394 Miami, FL 33179-3899',
-                '+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)',
-                'support@maxcoach.com'
-            ],
-            exploreList: [
-                'Start here',
-                'blog',
-                'About us'
-            ],
-            infoFooterList: [
-                'Success story',
-                'Courses',
-                'Coutact us'
-            ],
-            informationsList: [
-                'Membership',
-                'Purchase guide',
-                'Privacy policy',
-                'Terms of services'
-            ]
+            store,
         }
     },
 }
@@ -37,7 +19,7 @@ export default {
                 Address
             </h4>
             <ul>
-                <li v-for="contact in contactsList">
+                <li v-for="contact in store.contactsList">
                     {{ contact }}
                 </li>
                 <li>
@@ -72,7 +54,7 @@ export default {
                     Explore
                 </h4>
                 <ul>
-                    <li v-for="exploreEl in exploreList">
+                    <li v-for="exploreEl in store.exploreList">
                         <a href="#">
                             {{ exploreEl }}
                         </a>
@@ -81,7 +63,7 @@ export default {
             </div>
             <div class="center-list">
                 <ul>
-                    <li v-for="infoFootEl in infoFooterList">
+                    <li v-for="infoFootEl in store.infoFooterList">
                         <a href="#">
                             {{ infoFootEl }}
                         </a>
@@ -93,7 +75,7 @@ export default {
                     Information
                 </h4>
                 <ul>
-                    <li v-for="informationEl in informationsList">
+                    <li v-for="informationEl in store.informationsList">
                         <a href="#">
                             {{ informationEl }}
                         </a>
