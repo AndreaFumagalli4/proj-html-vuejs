@@ -91,7 +91,7 @@ export default {
         div.grey-bg-img {
             height: 400px;
             width: 400px;
-            top: 18%;
+            top: 26%;
             left: 10%;
             z-index: -1;
 
@@ -104,7 +104,7 @@ export default {
             width: 100px;
             position: absolute;
             top: 58%;
-            left: 44.5%;
+            left: 42%;
 
             img {
                 width: 100%;
@@ -115,7 +115,7 @@ export default {
             height: 35px;
             width: 130px;
             position: absolute;
-            bottom: 47%;
+            bottom: 43%;
             left: 4%;
 
             img {
