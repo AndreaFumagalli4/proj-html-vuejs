@@ -40,14 +40,10 @@ export default {
                     :index="index" />
             </div>
             <div class="carousel-control">
-                <i class="fa-solid fa-circle fa-2xs"
-                    @click="switchFirstCard"></i>
-                <i class="fa-solid fa-circle fa-2xs"
-                    @click="switchSecondCard"></i>
-                <i class="fa-solid fa-circle fa-2xs"
-                    @click="switchThirdCard"></i>
-                <i class="fa-solid fa-circle fa-2xs"
-                    @click="switchFourthCard"></i>
+                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-circle fa-2xs"></i>
+                <i class="fa-solid fa-circle fa-2xs"></i>
             </div>
             <div class="sub-text">
                 <h2>
@@ -101,6 +97,11 @@ export default {
 
                 &:hover{
                     font-size: .8rem;
+                }
+                
+                &:first-of-type{
+                    font-size: .8rem;
+                    color: $hover-button;
                 }
             }
         }
