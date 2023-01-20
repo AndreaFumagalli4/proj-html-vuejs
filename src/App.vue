@@ -48,6 +48,11 @@ export default {
     }
   }
 
+  .bg-green {
+    background-color: $detail-color;
+    color: $sec-bg-color;
+  }
+
   section {
     margin-bottom: 3rem;
   }

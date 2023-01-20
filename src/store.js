@@ -1,6 +1,23 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
+    coursesInfoList: [
+        {
+            title: 'Multiple platforms supported fot teaching & studyng',
+            text: 'MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device',
+            isActive: true,
+        },
+        {
+            title: 'Multiple course participation at the same time',
+            text: 'MaxCoach supports the act of teaching and learning on mmultiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device',
+            isActive: false,
+        },
+        {
+            title: 'Track study progress & deliver prompt feedback',
+            text: 'MaxCoach supports the act of teaching and learning on mmultiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device',
+            isActive: false,
+        },
+    ],
     courseInfoList: [
         {
             image: 'course-02-480x298.jpg',

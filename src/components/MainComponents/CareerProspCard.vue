@@ -5,27 +5,29 @@ export default {
 
     props: {
         infoTitle: String,
-        infoText: String
+        infoText: String,
+        isActive: Boolean,
+        index: Number
     },
 
-    data() {
-        return {
-            
-        }
+    methods: {
+
     }
 }
 </script>
 
 <template>
     <div class="card">
-        <div class="top-section flex">
+        <div class="top-section flex" 
+        :class="(isActive) ? 'bg-green' : ''" 
+        @click="$emit('switchInfo', index)">
             <h5>
                 {{ infoTitle }}
             </h5>
-            <i class="fa-regular fa-square-plus"></i>
-            <i class="fa-regular fa-square-minus"></i>
+            <i v-if="(!isActive)" class="fa-regular fa-square-plus"></i>
+            <i v-else class="fa-regular fa-square-minus"></i>
         </div>
-        <div class="bottom-section">
+        <div v-show="(isActive)" class="bottom-section">
             <p>
                 {{ infoText }}
             </p>
@@ -40,18 +42,19 @@ export default {
         border-radius: 5px;
         overflow: hidden;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
         div.top-section {
             padding: 1rem;
             justify-content: space-between;
-            
-            i.fa-square-minus {
-                display: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $detail-color;
             }
         }
 
         div.bottom-section {
-            padding: 1rem;
-            display: none;
+            padding: 1.5rem;
         }
     }
 </style>

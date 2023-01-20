@@ -64,6 +64,10 @@ export default {
 
 <style lang="scss" scoped>
     
+    section.build-dream{
+        margin-bottom: 5rem;
+    }
+
     h2 {
         padding-bottom: 3rem;
 

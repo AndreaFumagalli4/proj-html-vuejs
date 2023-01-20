@@ -1,4 +1,5 @@
 <script>
+import { store } from '../../store';
 import CareerProspCard from './CareerProspCard.vue';
 
 export default {
@@ -10,20 +11,35 @@ export default {
 
     data () {
         return {
-            infoList: [
-                {
-                    title: 'Multiple platforms supported fot teaching & studyng',
-                    text: 'MaxCoach supports the act of teaching and learning on mmultiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device'
-                },
-                {
-                    title: 'Multiple course participation at the same time',
-                    text: 'MaxCoach supports the act of teaching and learning on mmultiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device'
-                },
-                {
-                    title: 'Track study progress & deliver prompt feedback',
-                    text: 'MaxCoach supports the act of teaching and learning on mmultiple platforms like online or offline via material downloads. We konw things aren\'t supposed to be devoured in a  short time, you can always access our knowledge base from any device'
-                },
-            ],
+            store,
+            isOpen: true,
+        }
+    },
+
+    methods: {
+        getOtherInfo(activeIndex){
+
+            if (this.store.coursesInfoList[activeIndex].isActive) {
+                console.log(this.isOpen);
+                this.isOpen = false;
+                console.log(this.isOpen);
+            }
+            
+            if (this.isOpen === false) {
+                console.log(`isActive = ${this.store.coursesInfoList[activeIndex].isActive}`);
+                this.store.coursesInfoList[activeIndex].isActive = false;
+                console.log(`isActive = ${this.store.coursesInfoList[activeIndex].isActive}`);
+            }
+            
+            this.store.coursesInfoList[activeIndex].isActive = !(this.store.coursesInfoList[activeIndex].isActive);
+            
+            for (let i = 0; i < this.store.coursesInfoList.length; i++){
+                if (this.store.coursesInfoList[i].isActive) {
+                    this.store.coursesInfoList[i].isActive = false;
+                }
+            }
+
+            console.log(`isActive alla fine è = ${this.store.coursesInfoList[activeIndex].isActive}`);
         }
     }
 }
@@ -43,9 +59,12 @@ export default {
                     Construct A <span>Stunning</span> Career Perspective
                 </h2>
                 <div class="cards">
-                    <CareerProspCard v-for="infoEl in infoList"
-                        :infoTitle="infoEl.title"
-                        :infoText="infoEl.text" />
+                    <CareerProspCard v-for="(CoursesInfoEl, index) in store.coursesInfoList"
+                        :infoTitle="CoursesInfoEl.title"
+                        :infoText="CoursesInfoEl.text" 
+                        :isActive="CoursesInfoEl.isActive"
+                        :index="index"
+                        @switchInfo="getOtherInfo"/>
                 </div>
             </div>
         </div>
@@ -60,6 +79,7 @@ export default {
 
     section.career-prospective {
         position: relative;
+        margin-bottom: 6rem;
         
         div.container {
             height: 450px;
