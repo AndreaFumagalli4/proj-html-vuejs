@@ -51,7 +51,7 @@ export default {
     section.latest-courses {
         background-color: $sec-bg-color;
         margin-bottom: 5rem;
-        padding-bottom: 2rem;
+        padding: 3rem 0 2rem;
     }
 
     h2 {

@@ -51,7 +51,7 @@ export default {
         margin-bottom: 5rem;
 
         div.container {
-            height: 450px;
+            height: 500px;
             justify-content: space-between;
 
             div.right-section {
@@ -114,6 +114,7 @@ export default {
         div.lines {
             height: 35px;
             width: 130px;
+            position: absolute;
             bottom: 47%;
             left: 4%;
 

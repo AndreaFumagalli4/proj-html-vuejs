@@ -55,7 +55,7 @@ export default {
         position: relative;
         margin-bottom: 10rem;
         div.container {
-            height: 450px;
+            height: 500px;
             justify-content: space-between;
 
             div.left-section {
@@ -104,7 +104,7 @@ export default {
             height: 400px;
             width: 400px;
             top: 25%;
-            right: 28%;
+            right: 26%;
             z-index: -1;
 
             img {
@@ -116,8 +116,8 @@ export default {
             height: 150px;
             width: 150px;
             position: absolute;
-            top: 58%;
-            right: 17%;
+            top: 55%;
+            right: 16%;
 
             img {
                 width: 100%;

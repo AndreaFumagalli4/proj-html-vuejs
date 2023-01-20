@@ -58,12 +58,12 @@ export default {
     @use '../../styles/partials/variables' as *;
 
     section.jumbo {
-        // height: 500px;
+        height: 600px;
         background-color: $third-bg-color;
         position: relative;
 
         div.container {
-            height: 450px;
+            height: 500px;
             justify-content: space-between;
 
             div.title-section {
@@ -110,7 +110,7 @@ export default {
 
         div.bg-image{
             width: 100%;
-            height: 300px;
+            height: 400px;
             transform: rotateX(.5turn);
             position: absolute;
             bottom: 0;
