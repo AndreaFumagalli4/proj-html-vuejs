@@ -55,6 +55,9 @@ export default {
                 Students
             </p>
         </div>
+        <div class="price">
+            {{ price }}
+        </div>
     </div>
 </template>
 
@@ -64,6 +67,9 @@ export default {
         margin-right: 2rem;
         width: calc((100% / 3) - 2rem);
         margin-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: .3rem;
 
         &:nth-child(3n+3) {
             margin-right: 0;
@@ -115,7 +121,18 @@ export default {
                     margin-right: .3rem;
                 }
             }
+        }
 
+        div.price{
+            background-color: $detail-color;
+            color: $sec-bg-color;
+            width: 30%;
+            padding: .5rem;
+            text-align: center;
+            border-radius: 0 .3rem;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 </style>
