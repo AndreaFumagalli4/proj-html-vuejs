@@ -37,6 +37,9 @@ export default {
         <div class="bg-image dots">
             <img src="../../assets/images/maxcoach-shape-07.png" alt="Dots">
         </div>
+        <div class="bg-image lines">
+            <img src="../../assets/images/maxcoach-shape-01.png" alt="Colored lines">
+        </div>
     </section>
 </template>
 
@@ -96,13 +99,24 @@ export default {
                 width: 100%;
             }
         }
-
         div.dots{
             height: 150px;
             width: 100px;
             position: absolute;
             top: 58%;
             left: 44.5%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        div.lines {
+            height: 35px;
+            width: 130px;
+            position: absolute;
+            bottom: 47%;
+            left: 4%;
 
             img {
                 width: 100%;
