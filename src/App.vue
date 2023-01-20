@@ -77,4 +77,10 @@ export default {
     }
   }
 
+  footer li {
+    font-size: $text-fs;
+    color: $subtitles-color;
+    padding: .5rem 0;
+  }
+
 </style>
