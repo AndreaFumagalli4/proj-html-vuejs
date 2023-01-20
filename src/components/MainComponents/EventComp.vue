@@ -35,7 +35,11 @@ export default {
                     :month="event.month"/>
             </div>
             <p>
-                Excited about our event? <a href="#">View all events<i class="fa-solid fa-arrow-right-long"></i></a>
+                Excited about our event? 
+                <a href="#">
+                    View all events
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
             </p>
         </div>
     </section>
