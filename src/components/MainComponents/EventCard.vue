@@ -46,7 +46,15 @@ export default {
         padding: 1rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
+        border-radius: 5px;
         width: calc((100% / 2) - 2rem);
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $sec-bg-color;
+            box-shadow: $box-shadow;
+            border-left: 3px solid $detail-color;
+        }
         
         div.left-section p{
             color: $subtitles-color;
@@ -78,6 +86,9 @@ export default {
                 padding: .5rem 2rem;
             }
         }
+    }
 
+    div.card:hover button {
+        background-color: $hover-button;
     }
 </style>
