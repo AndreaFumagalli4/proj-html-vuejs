@@ -19,27 +19,20 @@ export default {
     methods: {
         getOtherInfo(activeIndex){
 
-            if (this.store.coursesInfoList[activeIndex].isActive) {
-                console.log(this.isOpen);
+            if ((this.store.coursesInfoList[activeIndex].isActive) && ((this.isOpen === true))) {
                 this.isOpen = false;
-                console.log(this.isOpen);
-            }
-            
-            if (this.isOpen === false) {
-                console.log(`isActive = ${this.store.coursesInfoList[activeIndex].isActive}`);
                 this.store.coursesInfoList[activeIndex].isActive = false;
-                console.log(`isActive = ${this.store.coursesInfoList[activeIndex].isActive}`);
-            }
-            
-            this.store.coursesInfoList[activeIndex].isActive = !(this.store.coursesInfoList[activeIndex].isActive);
-            
-            for (let i = 0; i < this.store.coursesInfoList.length; i++){
-                if (this.store.coursesInfoList[i].isActive) {
-                    this.store.coursesInfoList[i].isActive = false;
+            } else if (!(this.store.coursesInfoList[activeIndex].isActive) && (this.isOpen === false)) {
+                this.isOpen = true;
+                this.store.coursesInfoList[activeIndex].isActive = true;
+            } else if (!(this.store.coursesInfoList[activeIndex].isActive) && (this.isOpen === true)) {
+                for (let i = 0; i < this.store.coursesInfoList.length; i++){
+                    if (this.store.coursesInfoList[i].isActive) {
+                        this.store.coursesInfoList[i].isActive = false;
+                    }
                 }
+                this.store.coursesInfoList[activeIndex].isActive = !(this.store.coursesInfoList[activeIndex].isActive);
             }
-
-            console.log(`isActive alla fine è = ${this.store.coursesInfoList[activeIndex].isActive}`);
         }
     }
 }
