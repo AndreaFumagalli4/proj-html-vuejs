@@ -151,5 +151,4 @@ export const store = reactive({
             isView: false
         },
     ]
-    
 })

@@ -16,6 +16,7 @@ export default {
     },
 
     methods: {
+        
     }
 }
 </script>
@@ -30,12 +31,13 @@ export default {
                 What make they <span>love us?</span>
             </h2>
             <div class="cards">
-                <ReviewCard v-for="review in store.reviewList"
+                <ReviewCard v-for="(review, index) in store.reviewList"
                     :image="review.image"
                     :feedback="review.feedback"
                     :name="review.name"
                     :work="review.employment"
-                    :isView="review.isView"/>
+                    :isView="review.isView" 
+                    :index="index" />
             </div>
             <div class="carousel-control">
                 <i class="fa-solid fa-circle fa-2xs"

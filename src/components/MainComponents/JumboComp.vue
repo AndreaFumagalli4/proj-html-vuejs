@@ -48,6 +48,9 @@ export default {
                 </li>
             </ul>
         </div>
+        <div class="bg-image">
+            <img src="../../assets/images/jumbo-overlay.svg" alt="Jumbo overlay">
+        </div>
     </section>
 </template>
 
@@ -57,10 +60,6 @@ export default {
     section.jumbo {
         // height: 500px;
         background-color: $third-bg-color;
-        background-image: url('../../assets/images/jumbo-overlay.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         position: relative;
 
         div.container {
@@ -70,6 +69,7 @@ export default {
             div.title-section {
                 width: 40%;
                 padding: 1rem 1rem 1rem 0;
+                z-index: 3;
 
                 h1 {
                     color: $titles-color;
@@ -88,6 +88,7 @@ export default {
             div.image-container {
                 height: 100%;
                 padding: 2rem 0;
+                z-index: 3;
 
                 img {
                     height: 100%;
@@ -100,9 +101,24 @@ export default {
             position: absolute;
             right: 0;
             top: 25%;
+            z-index: 3;
 
             ul li {
                 padding: .25rem;
+            }
+        }
+
+        div.bg-image{
+            width: 100%;
+            height: 300px;
+            transform: rotateX(.5turn);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
     }

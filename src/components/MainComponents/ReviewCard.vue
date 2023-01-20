@@ -8,6 +8,7 @@ export default {
         name: String,
         work: String,
         isView: Boolean,
+        isIndex: Number
     },
 
     methods: {
