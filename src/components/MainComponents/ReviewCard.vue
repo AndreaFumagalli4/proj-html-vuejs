@@ -22,14 +22,14 @@ export default {
         <div class="img-container">
             <img :src="getImagePath(image)" alt="Profile Image">
         </div>
-        <p>
+        <p class="feedback">
             {{ feedback }}
         </p>
         <div class="text-center">
-            <p>
+            <p class="name">
                 {{ name }}
             </p>
-            <p>
+            <p class="work">
                 / {{ work }}
             </p>
         </div>
@@ -39,16 +39,45 @@ export default {
 <style lang="scss" scoped>
     @use '../../styles/partials/variables' as *;
     div.review-card{
-
+        background-color: $sec-bg-color;
+        color: $titles-color;
+        margin-right: 1rem;
+        padding: 1rem;
+        text-align: center;
+        width: calc(100% / 3);
+        position: relative;
         div.img-container{
             height: 100px;
             width: 100px;
             overflow: hidden;
             border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
 
             img{
                 height: 100%;
                 width: 100%;
+            }
+        }
+
+        p.feedback{
+            padding-top: 3rem;
+        }
+
+        div.text-center{
+            padding-top: 1.5rem;
+
+            p.name {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: black;
+            }
+
+            p.work {
+                padding-top: .5rem;
+                color: $subtitles-color;
             }
         }
     }

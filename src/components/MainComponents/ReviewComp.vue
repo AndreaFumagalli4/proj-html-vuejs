@@ -43,7 +43,11 @@ export default {
         background-color: $data-bg-color;
 
         h2{
-            padding-bottom: 3rem;
+            padding-bottom: 6rem;
+        }
+
+        div.cards{
+            display: flex;
         }
     }
 </style>
