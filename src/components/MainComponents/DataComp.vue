@@ -1,27 +1,12 @@
 <script>
+import { store } from '../../store';
+
 export default {
     name: 'DataComp',
 
     data() {
         return {
-            dataList: [
-                {
-                    number: '1.926',
-                    text: 'finished sessions'
-                },
-                {
-                    number: '3.092+',
-                    text: 'enrolled learners'
-                },
-                {
-                    number: '200',
-                    text: 'online instruction'
-                },
-                {
-                    number: '100%',
-                    text: 'satisfaction rate'
-                },
-            ]
+            store,
         }
     }
 }
@@ -31,7 +16,7 @@ export default {
     <section class="data">
         <div class="container">
             <ul class="flex">
-                <li v-for="dataEl in dataList">
+                <li v-for="dataEl in store.dataList">
                     <p class="num">
                         {{ dataEl.number }}
                     </p>

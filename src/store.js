@@ -23,6 +23,24 @@ export const store = reactive({
             text: 'Have a passion for graphics and arts? Show your talents with confidance and self-assertiveness.'
         },
     ],
+    dataList: [
+        {
+            number: '1.926',
+            text: 'finished sessions'
+        },
+        {
+            number: '3.092+',
+            text: 'enrolled learners'
+        },
+        {
+            number: '200',
+            text: 'online instruction'
+        },
+        {
+            number: '100%',
+            text: 'satisfaction rate'
+        }
+    ],
     coursesInfoList: [
         {
             title: 'Multiple platforms supported fot teaching & studyng',
