@@ -28,7 +28,7 @@ export default {
             </h2>
         </div>
         <div class="cards-container container flex">
-            <LatestCoursesCard v-for="courseInfoEl in store.courseInfoList" 
+            <LatestCoursesCard v-for="courseInfoEl in store.latestCourseInfoList" 
                 :courseImage="courseInfoEl.image" 
                 :teachImage="courseInfoEl.teacherProfileImage"
                 :teachName="courseInfoEl.teacher"

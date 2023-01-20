@@ -18,7 +18,7 @@ export const store = reactive({
             isActive: false,
         },
     ],
-    courseInfoList: [
+    latestCourseInfoList: [
         {
             image: 'course-02-480x298.jpg',
             teacherProfileImage: '73ee246daf47502812ccefc84bf02898 (1).jpeg',
@@ -124,25 +124,31 @@ export const store = reactive({
             image: 'testimonial-avata-02.jpg',
             feedback: 'I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
             name: 'Mina Hollace',
-            employment: 'Freelancer'
+            employment: 'Freelancer',
+            isView: true
+            
         },
         {
             image: 'testimonial-avata-04.jpg',
             feedback: 'MaxCoach is my best choise. Their tutors are smart and professional when deadling with students.',
             name: 'Madley Pondor',
-            employment: 'IT Specialist'
+            employment: 'IT Specialist',
+            isView: true
+            
         },
         {
             image: 'testimonial-avata-01.jpg',
             feedback: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.',
             name: 'Luvic Dubble',
-            employment: 'Private Tutor'
+            employment: 'Private Tutor',
+            isView: true
         },
         {
             image: 'testimonial-avata-03.jpg',
-            feedback: 'MaxCoach is my best choise. Their tutors are smart and professional when deadling with students.',
-            name: 'Madley Pondor',
-            employment: 'Economist'
+            feedback: 'I\'m a very strict person so I require everything to be organizedand neat. MaxCoach guys just got me.',
+            name: 'Florence Themes',
+            employment: 'Multimedia Admin',
+            isView: false
         },
     ]
     

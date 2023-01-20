@@ -13,6 +13,9 @@ export default {
         return{
             store,
         }
+    },
+
+    methods: {
     }
 }
 </script>
@@ -31,7 +34,18 @@ export default {
                     :image="review.image"
                     :feedback="review.feedback"
                     :name="review.name"
-                    :work="review.employment"/>
+                    :work="review.employment"
+                    :isView="review.isView"/>
+            </div>
+            <div class="carousel-control">
+                <i class="fa-solid fa-circle fa-2xs"
+                    @click="switchFirstCard"></i>
+                <i class="fa-solid fa-circle fa-2xs"
+                    @click="switchSecondCard"></i>
+                <i class="fa-solid fa-circle fa-2xs"
+                    @click="switchThirdCard"></i>
+                <i class="fa-solid fa-circle fa-2xs"
+                    @click="switchFourthCard"></i>
             </div>
             <div class="sub-text">
                 <h2>
@@ -43,6 +57,12 @@ export default {
                 <button class="green-button">
                     Get started now
                 </button>
+                <div class="bg-image lines">
+                    <img src="../../assets/images/maxcoach-shape-01.png" alt="Colored lines">
+                </div>
+                <div class="bg-image rims">
+                    <img src="../../assets/images/maxcoach-shape-02.png" alt="Rims">
+                </div>
             </div>
         </div>
     </section>
@@ -50,8 +70,14 @@ export default {
 
 <style lang="scss" scoped>
     @use '../../styles/partials/variables' as *;
+
+    .bg-image{
+        position: absolute;
+    }
     section.review{
+        padding-top: 3rem;
         background-color: $data-bg-color;
+        position: relative;
 
         h2{
             padding-bottom: 6rem;
@@ -59,6 +85,22 @@ export default {
 
         div.cards{
             display: flex;
+            flex-wrap: wrap;
+        }
+        div.carousel-control {
+            text-align: center;
+            margin-bottom: 3rem;
+
+            i{
+                margin: 0 .5rem;
+                cursor: pointer;
+                color: $subtitles-color;
+                font-size: .5rem;
+
+                &:hover{
+                    font-size: .8rem;
+                }
+            }
         }
 
         div.sub-text{
@@ -78,6 +120,30 @@ export default {
         div.sub-text button{
             padding: 1rem 4rem;
             margin-bottom: 5rem;
+        }
+    }
+
+    div.lines {
+        height: 35px;
+        width: 130px;
+        bottom: 15%;
+        left: 13%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    div.rims {
+        height: 120px;
+        width: 120px;
+        bottom: 5%;
+        right: 13%;
+
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
 

@@ -8,10 +8,6 @@ export default {
         infoText: String,
         isActive: Boolean,
         index: Number
-    },
-
-    methods: {
-
     }
 }
 </script>

@@ -114,7 +114,6 @@ export default {
         div.lines {
             height: 35px;
             width: 130px;
-            position: absolute;
             bottom: 47%;
             left: 4%;
 

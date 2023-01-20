@@ -6,7 +6,8 @@ export default {
         image: String,
         feedback: String,
         name: String,
-        work: String
+        work: String,
+        isView: Boolean,
     },
 
     methods: {
@@ -18,7 +19,8 @@ export default {
 </script>
 
 <template>
-    <div class="review-card">
+    <div class="review-card"
+        v-show="(isView)">
         <div class="img-container">
             <img :src="getImagePath(image)" alt="Profile Image">
         </div>
@@ -41,11 +43,11 @@ export default {
     div.review-card{
         background-color: $sec-bg-color;
         color: $titles-color;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        margin-right: 1rem;
-        padding: 1rem;
+        box-shadow: $box-shadow;
+        margin: 0 1rem;
+        padding: 1.5rem;
         text-align: center;
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 2rem);
         position: relative;
         margin-bottom: 5rem;
         div.img-container{
@@ -65,11 +67,11 @@ export default {
         }
 
         p.feedback{
-            padding-top: 3rem;
+            padding-top: 3.5rem;
         }
 
         div.text-center{
-            padding-top: 1.5rem;
+            padding-top: 2rem;
 
             p.name {
                 text-transform: uppercase;
@@ -78,7 +80,7 @@ export default {
             }
 
             p.work {
-                padding-top: .5rem;
+                padding-top: 1rem;
                 color: $subtitles-color;
             }
         }
