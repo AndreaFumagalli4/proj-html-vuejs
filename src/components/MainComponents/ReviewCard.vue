@@ -41,11 +41,13 @@ export default {
     div.review-card{
         background-color: $sec-bg-color;
         color: $titles-color;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         margin-right: 1rem;
         padding: 1rem;
         text-align: center;
         width: calc(100% / 3);
         position: relative;
+        margin-bottom: 5rem;
         div.img-container{
             height: 100px;
             width: 100px;

@@ -33,6 +33,17 @@ export default {
                     :name="review.name"
                     :work="review.employment"/>
             </div>
+            <div class="sub-text">
+                <h2>
+                    Start today for getting <span>Online Certification</span>
+                </h2>
+                <h2>
+                    You can be your own guiding star with our help!
+                </h2>
+                <button class="green-button">
+                    Get started now
+                </button>
+            </div>
         </div>
     </section>
 </template>
@@ -49,5 +60,25 @@ export default {
         div.cards{
             display: flex;
         }
+
+        div.sub-text{
+            text-align: center;
+        }
+
+        div.sub-text h2:first-of-type{
+            padding-bottom: .3rem;
+            font-size: 1.5rem;
+        }
+
+        div.sub-text h2:last-of-type{
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        div.sub-text button{
+            padding: 1rem 4rem;
+            margin-bottom: 5rem;
+        }
     }
+
 </style>
