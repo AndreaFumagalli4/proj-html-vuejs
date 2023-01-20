@@ -72,7 +72,7 @@ export default {
 
     section.career-prospective {
         position: relative;
-        margin-bottom: 6rem;
+        margin-bottom: 10rem;
         
         div.container {
             height: 450px;
