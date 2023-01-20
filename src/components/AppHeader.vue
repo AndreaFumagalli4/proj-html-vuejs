@@ -28,12 +28,13 @@ export default {
       <ul class="flex icons-list">
         <li>
           <a href="#">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+            <span class="notification">0</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-regular fa-circle-user fa-lg"></i>
           </a>
         </li>
       </ul>
@@ -79,7 +80,11 @@ export default {
   }
 
   ul.icons-list li{
-    padding-right: .75rem;
+    padding-right: 1.5rem;
+  }
+
+  ul.icons-list li:first-child {
+    position: relative;
   }
 
   div.input-el {
@@ -101,5 +106,17 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
+  }
+
+  span.notification{
+    font-size: .5rem;
+    color: $sec-bg-color;
+    font-size: 600;
+    background-color: $detail-color;
+    padding: .15rem .35rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 11px;
+    right: 14px;
   }
 </style>
