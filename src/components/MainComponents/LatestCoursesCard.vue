@@ -70,6 +70,13 @@ export default {
         position: relative;
         overflow: hidden;
         border-radius: .3rem;
+        cursor: pointer;
+        padding-bottom: 2rem;
+
+        &:hover{
+            background-color: $sec-bg-color;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
 
         &:nth-child(3n+3) {
             margin-right: 0;
@@ -77,10 +84,15 @@ export default {
 
         div.image-container {
             width: 100%;
+            transition: 1s;
 
             img {
                 width: 100%;
             }
+        }
+
+        &:hover div.image-container {
+            transform: scale(1.1);
         }
 
         div.teacher {

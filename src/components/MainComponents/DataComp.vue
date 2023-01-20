@@ -49,6 +49,7 @@ export default {
 
     section.data {
         background-color: $data-bg-color;
+        margin-bottom: 0;
     }
 
     div.container ul {

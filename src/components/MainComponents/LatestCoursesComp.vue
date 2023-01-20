@@ -49,8 +49,9 @@ export default {
 <style lang="scss" scoped>
     @use '../../styles/partials/variables' as *;
     section.latest-courses {
-        background-color: $courses-bg-color;
+        background-color: $sec-bg-color;
         margin-bottom: 5rem;
+        padding-bottom: 2rem;
     }
 
     h2 {
